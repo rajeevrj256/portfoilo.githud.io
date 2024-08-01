@@ -197,44 +197,134 @@ span{
     margin: 2rem 0 3rem;
 
 }
-.services h2{
-    margin-bottom: 5rem;
+.skills {
+    background: var( --bg-color);
+    padding: 5rem 0;
+    text-align: center;
 }
 
-.services-container{
-    display: flex;
+.skills h2 {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    color: var(--text-colorr);
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    gap: 5rem;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
+    padding: 0 5%;
 }
 
-.services-container .services-box{
-    flex: 1 1 30rem;
+.skills-box {
     background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
-    border-radius: 2rem;
-    text-align: center;
-    border: .2rem solid var(--bg-color);
+    padding: 2rem;
+    border-radius: 1rem;
     transition: .5s ease;
+    box-shadow: 0 0 1rem var(--second-bg-color);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15rem;
+}
 
+.skills-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem var(--main-color);
 }
-.services-container .services-box:hover{
-    border-color: var(--main-color);
-    transform: scale(1.02);
+
+.skills-box i {
+    font-size: 5rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
 }
-.services-box i{
-    font-size: 7rem;
+
+.skills-box h3 {
+    font-size: 1.5rem;
     color: var(--main-color);
 }
 
-.services-box h3{
-    font-size: 2.6rem;
+@media (max-width: 991px) {
+    .skills {
+        padding: 3rem 3%;
+    }
+
+    .skills h2 {
+        margin-bottom: 3rem;
+        font-size: 2.5rem;
+    }
+
+    .skills-container {
+        gap: 1rem;
+    }
+
+    .skills-box {
+        height: 10rem;
+        padding: 1.5rem;
+    }
+
+    .skills-box i {
+        font-size: 4rem;
+    }
+
+    .skills-box h3 {
+        font-size: 1.3rem;
+    }
 }
 
-.services-box p {
-    font-size: 1.6rem;
-    margin: 1rem 0 3rem;
+@media (max-width: 768px) {
+    .skills h2 {
+        font-size: 2.2rem;
+    }
+
+    .skills-box {
+        height: 9.5rem;
+        padding: 1rem;
+    }
+
+    .skills-box i {
+        font-size: 3.5rem;
+    }
+
+    .skills-box h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .skills h2 {
+        font-size: 2rem;
+    }
+
+    .skills-box {
+        height: 9rem;
+        padding: 0.5rem;
+    }
+
+    .skills-box i {
+        font-size: 3rem;
+    }
+
+    .skills-box h3 {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+/* Responsive adjustments for the skills section */
+@media (max-width: 768px) {
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .portfolio{
@@ -318,13 +408,17 @@ span{
 @media(min-width:738px){
     .contact__container{display: flex;}
 }
-.section__subtitle{
-    font-size: 3rem;
+.skills h2 {
+    font-size: 2rem;
 }
-.section__title{
-     text-align: center;
-     font-size: 6rem;
-     padding: 2rem;
+
+.skills-box {
+    height: 6rem;
+    padding: 0.5rem;
+}
+
+.skills-box h3 {
+    font-size: 1.2rem;
 }
 
 .contact__title{
