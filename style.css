@@ -248,6 +248,39 @@ span{
     color: var(--main-color);
 }
 
+.skills-performance-container {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between the columns */
+}
+
+.skills-container {
+    flex: 1; /* Left column for skills */
+    margin-right: 20px; /* Space between the columns */
+}
+
+.performance-container {
+    margin-right: 1%;
+    flex: 0 0 40%; /* Right column for performance, adjust width as needed */
+    background-color: #9211bd; /* Optional background color */
+    padding: 20px; /* Optional padding for aesthetics */
+    border: 1px solid #ddd; /* Optional border for separation */
+    border-radius: 5px; /* Optional rounded corners */
+    display: flex; /* Use flexbox for vertical alignment */
+    flex-direction: column; /* Align children vertically */
+    gap: 15px; /* Space between performance boxes */
+}
+
+
+.performance-box {
+    background-color: #fff; /* Background for individual performance boxes */
+    padding: 15px; /* Padding for content */
+    border: 1px solid #ddd; /* Optional border for separation */
+    border-radius: 5px; /* Optional rounded corners */
+}
+
+
+
+
 @media (max-width: 991px) {
     .skills {
         padding: 3rem 3%;
@@ -379,6 +412,7 @@ span{
     font-size: 3rem;
 }
 
+
 .portfolio-layer p{
     font-size: 1.6rem;
     margin: .3rem 0 1rem;
@@ -395,6 +429,14 @@ span{
 .portfolio-layer a i{
     font-size: 2rem;
     color: var(--second-bg-color);
+}
+.portfolio-links {
+    display: flex;
+    gap: 15px; /* Adjusts the spacing between the links */
+}
+.portfolio-links a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .contact__container{
