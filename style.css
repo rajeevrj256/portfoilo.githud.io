@@ -128,8 +128,9 @@ span{
 
 }
 .home-content p{
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     color: #0ef;
+    line-height: 1.6;
 }
 .social-media a{
     display: inline-flex;
@@ -193,7 +194,7 @@ span{
 }
 
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 2rem 0 3rem;
 
 }

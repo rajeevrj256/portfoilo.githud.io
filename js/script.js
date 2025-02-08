@@ -52,7 +52,13 @@ ScrollReveal().reveal('.home-content p,.about-content', { origin: 'right' });
 
 
 const typed= new Typed('.multiple-text',{
-    strings: ['Software developer','Backend Developer', 'c++ programmer','Full stack developer'],
+    strings: ['Full-stack Developer', 
+        'AI-driven Software Developer', 
+        'RAG & Agentic AI Expert', 
+        'Microservices Architect', 
+        'Cloud Solutions Engineer',
+        'Backend Developer', 
+        'C++ Programmer'],
     typeSpeed:100,
     backSpeed:100,
     backDelay:1000,
